@@ -31,7 +31,7 @@ This guide will show you how to add permissions to [roles](/authorization/concep
 	],
 	"postData": {
     "mimeType": "application/json",
-    "text": "{ \"permissions\": [ { \"resource_server_identifier\": \"API_ID\", \"permission_name\": \"PERMISSION_NAME\" }, { \"resource_server_identifier\": \"API_ID\", \"permission_name\": \"PERMISSION_NAME\" } ] }"
+    "text": "{ \"permissions\": [ { \"resource_server_identifier\": \"API_AUDIENCE\", \"permission_name\": \"PERMISSION_NAME\" }, { \"resource_server_identifier\": \"API_ID\", \"permission_name\": \"PERMISSION_NAME\" } ] }"
   }
 }
 ```
@@ -40,5 +40,5 @@ This guide will show you how to add permissions to [roles](/authorization/concep
 | - | - |
 | `ROLE_ID` | Τhe ID of the role for which you want to add permissions. |
 | `MGMT_API_ACCESS_TOKEN`  | [Access Token for the Management API](/api/management/v2/tokens) with the scope `update:roles`. |
-| `API_ID` | ID(s) of the API(s) associated with the permission(s) you would like to add for the specified role. |
+| `API_AUDIENCE` | This is the identifier (audience) of the API(s) associated with the permission(s) you would like to add for the specified role. This is not the API_ID |
 | `PERMISSION_NAME` | Name(s) of the permission(s) you would like to add for the specified role. |
